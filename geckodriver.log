@@ -1,0 +1,11 @@
+1624494062568	geckodriver	INFO	Listening on 127.0.0.1:63539
+1624494065626	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mikha\\AppData\\Local\\Temp\\rust_mozprofileEG6QDB"
+1624494066239	Marionette	INFO	Marionette enabled
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 1346: uncaught exception: undefined
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\mikha\\AppData\\Local\\Temp\\rust_mozprofileEG6QDB\\search.json.mozlz4", (void 0)))
+1624494068363	Marionette	INFO	Listening on port 57230
+1624494068836	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1624494081874	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1624494100197	Marionette	INFO	Stopped listening on port 57230
