@@ -1,6 +1,6 @@
 # Free movies on YouTube
 
-There are quite a few "Free with Ads" movies availble on YouTube. This program makes a `.csv` file of the all the available free movies on YouTube along with its link to watch the movie and the duration.
+There are quite a few "Free with Ads" movies available on YouTube. This program makes a `.csv` file of the all the available free movies on YouTube along with its link to watch the movie and the duration.
 
 ## How to run the program
 
