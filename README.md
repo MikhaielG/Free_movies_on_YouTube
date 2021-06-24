@@ -6,6 +6,8 @@ There are quite a few "Free with Ads" movies availble on YouTube. This program m
 
 * Clone repo
 * Install the requirements by running the following in the terminal, in the same directory.
+
   `pip install -r requirements.txt`
 * Run the following:
+
   `python main.py`
