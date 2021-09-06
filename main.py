@@ -1,5 +1,8 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 import csv
 import time
 
@@ -11,7 +14,7 @@ def setup_driver():
 
 def write_to_csv(array):
     keys = array[0].keys()
-    with open('free_movies_on_youtube.csv','w', newline = '') as output:
+    with open('free_movies_on_youtube.csv','w', newline = '', encoding='utf-8') as output:
         dict_writer = csv.DictWriter(output, keys)
         dict_writer.writeheader()
         dict_writer.writerows(array)
@@ -30,7 +33,7 @@ def run():
     driver.execute_script("document.getElementsByClassName('title style-scope ytd-guide-entry-renderer')[8].click()")
     time.sleep(1)
     """Click free to watch"""
-    driver.find_element_by_partial_link_text("Free to watch").click()
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '/html/body/ytd-app/div/ytd-page-manager/ytd-browse[2]/ytd-two-column-browse-results-renderer/div[1]/ytd-section-list-renderer/div[2]/ytd-item-section-renderer[2]/div[3]/ytd-shelf-renderer/div[1]/div[1]/div/h2/div[1]/div/a'))).click()
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source,'html.parser')
     driver.quit()
